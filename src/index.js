@@ -32,7 +32,7 @@ class App extends Component {
             body.push(<div key={index}>{data[index].title}</div>);
             this.setState(
               (prevState) => {
-                //Progress Bar Pertage - Data Processing Time Taken
+                //Progress Bar Percentage - Data Processing Time Taken
                 return { value: prevState.value + (1 / data.length) * 100 };
               },
               () => {
